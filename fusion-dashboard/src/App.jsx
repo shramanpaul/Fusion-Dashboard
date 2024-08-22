@@ -37,16 +37,12 @@
 
 import React from "react";
 import "./App.css";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
-    <div className="min-h-screen p-4">
-      <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
-        <h1 className="text-2xl font-bold mb-4">Hello, Tailwind CSS!</h1>
-        <p className="text-gray-700 bg-red-50">
-          This is a sample application to test Tailwind CSS setup.
-        </p>
-      </div>
+    <div className="App">
+      <Dashboard />
     </div>
   );
 }
