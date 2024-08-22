@@ -15,7 +15,7 @@ const UserCard = ({ user }) => {
         <p className="text-gray-600">{user.semester}</p>
         <p className="text-gray-600">{user.role}</p>
       </div>
-      <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded w-full">
+      <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-xl w-full">
         View Professional Profile
       </button>
     </div>

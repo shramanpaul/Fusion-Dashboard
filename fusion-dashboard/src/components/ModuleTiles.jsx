@@ -49,7 +49,7 @@ const icons = {
 
 const ModuleTiles = ({ modules }) => {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 gap-2 h-[620px] overflow-y-auto">
       {modules.map((module) => (
         <div
           key={module.name}

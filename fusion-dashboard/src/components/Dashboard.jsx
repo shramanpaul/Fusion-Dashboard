@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   const user = {
     profilePicture: profileImage,
-    name: "OM PANDEY",
+    name: "Harshita",
     department: "CSE - 22BCS176",
     degree: "B.Tech 2022",
     semester: "Sem - 4",
@@ -51,21 +51,28 @@ const Dashboard = () => {
               <span className="bg-red-500 text-white rounded-full px-3 py-1 mr-4">
                 29
               </span>
-              <div className="text-gray-600">OM PANDEY</div>
+              <div className="text-gray-600"></div>
             </div>
           </div>
 
           {/* Notifications Section */}
-          <div className="bg-white p-4 rounded shadow">
+          <div className="bg-white p-4 rounded shadow flex-row">
+            <div className="flex ml-44">
             <h2 className="text-xl font-semibold mb-4">
               <FontAwesomeIcon icon={faBell} className="text-blue-500 mr-3" />
               Notifications
             </h2>
+            </div>
             {[
               {
                 title: "Gymkhana Module",
                 description:
                   "Hackbyte event by BitByte Club will be organised in CR102 -by PRIYANSH MEHTA",
+              },
+              {
+                title: "Gymkhana Module",
+                description:
+                  "A session by BitByte Club will be organised in CR101 -by PRIYANSH MEHTA",
               },
               {
                 title: "Gymkhana Module",
@@ -82,14 +89,15 @@ const Dashboard = () => {
                   <p className="text-gray-600">{notification.description}</p>
                   <p className="text-sm text-gray-500 mt-1">2 weeks, 1 day ago</p>
                 </div>
-                <button className="text-blue-500">Mark as Read</button>
+                <button className="text-blue-500 text-sm">Mark as Read</button>
               </div>
             ))}
           </div>
+          <span className="text-blue-500">Load More</span>
         </div>
 
         {/* Modules Section (Right Sidebar) */}
-        <div className="w-1/5 bg-gray-100 p-4">
+        <div className="w-1/4 bg-gray-100 p-4">
           <div className="bg-white p-4 rounded shadow">
             <h2 className="text-xl font-semibold mb-4">Modules</h2>
             <ModuleTiles modules={modules} />
