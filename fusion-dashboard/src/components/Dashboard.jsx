@@ -2,25 +2,41 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import UserCard from "./UserCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell, faSignOutAlt, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { 
+  faBell, 
+  faSignOutAlt, 
+  faChevronDown, 
+  faChevronUp, 
+  faGraduationCap, 
+  faBookOpen, 
+  faUtensils, 
+  faHome, 
+  faClinicMedical, 
+  faMoneyBill, 
+  faComments, 
+  faBriefcase, 
+  faBuilding, 
+  faUserGraduate, 
+  faTasks 
+} from "@fortawesome/free-solid-svg-icons";
 import profileImage from "../profile.png";
 
 const Dashboard = () => {
   const [isModulesOpen, setIsModulesOpen] = useState(false);
 
   const modules = [
-    { name: "Academics", icon: "graduation-cap" },
-    { name: "Programme and Curriculum", icon: "book-open" },
-    { name: "Mess Management", icon: "utensils" },
-    { name: "Visitor's Hostel", icon: "home" },
-    { name: "Healthcare Center", icon: "clinic-medical" },
-    { name: "Scholarship Portal", icon: "money-bill" },
-    { name: "Complaint System", icon: "comments" },
-    { name: "Placement Cell", icon: "briefcase" },
-    { name: "Department", icon: "building" },
-    { name: "Gymkhana", icon: "user-graduate" },
-    { name: "Hostel Management", icon: "building-user" },
-    { name: "Other Academic Procedure", icon: "tasks" }
+    { name: "Academics", icon: faGraduationCap },
+    { name: "Programme and Curriculum", icon: faBookOpen },
+    { name: "Mess Management", icon: faUtensils },
+    { name: "Visitor's Hostel", icon: faHome },
+    { name: "Healthcare Center", icon: faClinicMedical },
+    { name: "Scholarship Portal", icon: faMoneyBill },
+    { name: "Complaint System", icon: faComments },
+    { name: "Placement Cell", icon: faBriefcase },
+    { name: "Department", icon: faBuilding },
+    { name: "Gymkhana", icon: faUserGraduate },
+    { name: "Hostel Management", icon: faBuilding },
+    { name: "Other Academic Procedure", icon: faTasks }
   ];
 
   const user = {
